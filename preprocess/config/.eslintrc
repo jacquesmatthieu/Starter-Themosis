@@ -1,0 +1,74 @@
+#last review done for eslint 3.18.0
+# 0: off / 1: warn / 2: error
+
+extends: 'eslint:recommended' #enable recommended rules (hich have a check mark)
+parser: babel-eslint
+
+env:
+  browser: true
+  es6: true
+  node: true
+  commonjs: true
+  jquery: true
+
+#globals variables
+globals:
+  google: true
+  $: true
+  jQuery: true
+  Backbone: true
+  React: true
+  Modernizr: true
+  _: true
+  __webpack_public_path__: true
+
+rules:
+#Possible Errors
+  no-console: 0 #disallow use of console
+
+#Stylistic Issues
+  indent: [1, 4] #enforce consistent indentation
+  no-trailing-spaces: 1 #disallow trailing whitespace at the end of lines
+  array-bracket-spacing: 2 #enforce consistent spacing inside array brackets
+  brace-style: 2 #enforce consistent brace style for blocks
+  camelcase: 1 #enforce camelcase naming convention
+  capitalized-comments: 1 #enforce or disallow capitalization of the first letter of a comment
+  comma-dangle: 2 #require or disallow trailing commas
+  comma-spacing: [2, {'before': false, 'after': true}] #enforce consistent spacing before and after commas
+  comma-style: 2 #enforce consistent comma style
+  computed-property-spacing: 2 #enforce consistent spacing inside computed property brackets
+  func-call-spacing: 2 #require or disallow spacing between function identifiers and their invocations
+  jsx-quotes: 2 #enforce the consistent use of either double or single quotes in JSX attributes
+  key-spacing: 1 #enforce consistent spacing between keys and values in object literal properties
+  keyword-spacing: 2 #enforce consistent spacing before and after keywords
+  max-depth: [2, 5] #enforce a maximum depth that blocks can be nested
+  max-nested-callbacks: [2, 5] #enforce a maximum depth that callbacks can be nested
+  max-params: [2, 5] #enforce a maximum number of parameters in function definitions
+  new-cap: 2 #require constructor names to begin with a capital letter
+  new-parens: 2 #require parentheses when invoking a constructor with no arguments
+  no-bitwise: 2 #disallow bitwise operators
+  no-multiple-empty-lines: 1 #disallow multiple empty lines
+  no-nested-ternary: 2 #disallow nested ternary expressions
+  quotes: [1, 'single'] #enforce the consistent use of either backticks, double, or single quotes
+  semi: [2, 'always'] #require or disallow semicolons instead of ASI
+  semi-spacing: [2, {'before': false, 'after': true}] #enforce consistent spacing before and after semicolons
+  space-in-parens: [2, "never"] #enforce consistent spacing inside parentheses
+  space-infix-ops: 2 #require spacing around infix operators
+  space-unary-ops: 2 #enforce consistent spacing before or after unary operators
+
+#Best Practices
+  eqeqeq: 2 #require the use of === and !==
+  no-empty-function: 2 #disallow empty functions
+  no-eq-null: 2 #disallow null comparisons without type-checking operators
+  no-multi-str: 2 #disallow multiline strings
+  vars-on-top: 2 #require var declarations be placed at the top of their containing scope
+
+#Variables
+  no-use-before-define: 2 #disallow the use of variables before they are defined
+
+#ECMAScript 6
+  arrow-spacing: [2, {'before': true, 'after': true}] #enforce consistent spacing before and after the arrow in arrow functions
+  no-confusing-arrow: 2 #disallow arrow functions where they could be confused with comparisons
+  no-const-assign: 2 #disallow reassigning const variables
+  no-var: 2 #require let or const instead of var
+  prefer-destructuring: 1 #require destructuring from arrays and/or objects

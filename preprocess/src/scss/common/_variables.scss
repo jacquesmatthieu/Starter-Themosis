@@ -1,0 +1,115 @@
+$img-path: '../assets/img/' !default;
+$font-path: '../assets/fonts/' !default;
+
+$global-border-box: true !default;
+
+$primary-bg-color: #081b3f;
+$secondary-bg-color: lightsteelblue;
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+$white: #fff;
+$black: #000;
+
+$gray-base: $black;
+$gray-dark: #282828;
+$gray: #bdbdbd;
+$gray-lighter: #f6f6f6;
+
+//== Scaffolding
+//
+//
+
+//** Background color for `<body>`.
+$body-bg: #fff;
+$text-color: $gray-dark;
+
+//** Global textual link color.
+$link-color: $gray-dark;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+//== Typography
+//
+//
+$font-family-base: 'NHaasGrotesk-Regular';
+$font-family-base-bold: 'NHaasGrotesk-Bold';
+$font-family-sherif: 'BodoniBT-Book';
+$font-size-base: 14px;
+$line-height-base: 22px;
+
+$font-size-h1:     8rem;
+$font-size-h1-bis: 5rem;
+$font-size-h2:     6rem;
+$font-size-h3:     4rem;
+$font-size-h4:     3rem;
+$font-size-h5:     2rem;
+$font-size-h6: $font-size-base;
+
+$line-height-h1: 80px;
+$line-height-h2: $line-height-h1;
+$line-height-h3: $line-height-h1;
+$line-height-h4: 76px;
+$line-height-h5: $line-height-base;
+$line-height-h6: $line-height-base;
+
+//== Grid
+//
+//
+$gutter: 30px;
+
+//== Media queries breakpoints
+//
+//
+$screen-xs: 320px;
+$screen-xs-min: $screen-xs;
+
+// Small screen / tablet
+$screen-sm: 768px;
+$screen-sm-min: $screen-sm;
+
+$breakpoint-sm: 1024px;
+
+// Medium screen / desktop
+$screen-md: 1280px;
+$screen-md-min: $screen-md;
+
+// Large screen / small desktop
+$screen-lg: 1440px;
+$screen-lg-min: $screen-lg;
+
+// XLarge screen / wide desktop
+$screen-xl: 1600px;
+$screen-xl-min: $screen-xl;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($breakpoint-sm - 1);
+$screen-md-max: ($screen-lg-min - 1);
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-sm:              $screen-sm;
+
+// Medium screen / desktop
+$container-md:              $screen-md;
+
+// Large screen / small desktop
+$container-lg:              $screen-lg;
+
+// XLarge screen / wide desktop
+$container-xl:              $screen-xl;
+
+//== Navbar
+//
+//
+$navbar-height: 70px;
+
+//== Transition
+//
+//
+$transition: all 0.5 ease-in-out;

@@ -1,0 +1,28 @@
+{
+    "jsEntry":                "../src/js/main.js",
+    "jsPath":                 "../src/js",
+    "jsVendorPath":           "../src/js/vendor",
+    "scssEntry":              "../src/scss/main.scss",
+    "scssPath":               "../src/scss",
+    "publicPath":             "../../htdocs/content/themes/Mouqabala",
+    "uglifyJS":               {
+        "mangle":     true,
+        "compressor": {
+            "warnings":      false,
+            "drop_debugger": true,
+            "drop_console":  true
+        },
+        "output":     {
+            "comments": false
+        }
+    },
+    "browserCompatibilities": [
+        "last 2 Chrome versions",
+        "last 2 Firefox versions",
+        "last 2 Safari versions",
+        "last 2 Opera versions",
+        "IE 11",
+        "Edge 13",
+        "iOS 8-10"
+    ]
+}
