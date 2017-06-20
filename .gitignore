@@ -19,6 +19,7 @@ cs_fixer*
 /htdocs/content/themes/themosis-theme/
 /htdocs/content/uploads/
 /htdocs/content/upgrade/
+/htdocs/content/plugins/
 
 
 ### Environment Credentials
